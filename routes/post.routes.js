@@ -5,7 +5,7 @@ const router = express.Router();
 router.get("/get", getItems);
 router.get("/detail/:id", getOneItem);
 router.post("/", setItems);
-router.put("/:id", editItems)
+router.put("/detail/:id", editItems)
 router.delete("/delete/:id", deleteItems);
 
 module.exports = router;
